@@ -3,10 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Page</title>
+  <title>My Digital Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 16px;
+      color: #666;
+      margin: 5px 0;
+    }
+    .links a {
+      display: inline-block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+    .links a:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My GitHub Page!</h1>
-  <p>This is my first website hosted on GitHub.</p>
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
+    <h1>Your Name</h1>
+    <p>Your Title or Role</p>
+    <p>Your Location</p>
+    <p>Short Description or Tagline</p>
+    <div class="links">
+      <a href="https://example.com" target="_blank">Link 1</a>
+      <a href="https://example.com" target="_blank">Link 2</a>
+      <a href="https://example.com" target="_blank">Link 3</a>
+      <a href="https://example.com" target="_blank">Link 4</a>
+    </div>
+  </div>
 </body>
 </html>
