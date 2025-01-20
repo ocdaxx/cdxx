@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Digital Card</title>
+  <title>Моя Визитка</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
       margin: 0;
       padding: 0;
       display: flex;
@@ -16,36 +16,42 @@
       height: 100vh;
     }
     .card {
-      text-align: center;
       background: #fff;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 300px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
     }
     .avatar {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 20px;
+      border: 2px solid #007bff;
     }
     h1 {
       font-size: 24px;
       margin: 10px 0;
+      color: #333;
     }
     p {
       font-size: 16px;
-      color: #666;
+      color: #555;
       margin: 5px 0;
+    }
+    .links {
+      margin-top: 20px;
     }
     .links a {
       display: inline-block;
-      margin: 10px 0;
+      margin: 5px;
       text-decoration: none;
       color: #fff;
       background-color: #007bff;
-      padding: 10px 15px;
+      padding: 10px 20px;
       border-radius: 5px;
       font-size: 14px;
       transition: background-color 0.3s;
@@ -57,16 +63,16 @@
 </head>
 <body>
   <div class="card">
-    <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
-    <h1>Your Name</h1>
-    <p>Your Title or Role</p>
-    <p>Your Location</p>
-    <p>Short Description or Tagline</p>
+    <img src="https://via.placeholder.com/120" alt="Аватар" class="avatar">
+    <h1>Ваше Имя</h1>
+    <p>Ваша Должность</p>
+    <p>Ваш Город, Страна</p>
+    <p>Краткое описание или слоган</p>
     <div class="links">
-      <a href="https://example.com" target="_blank">Link 1</a>
-      <a href="https://example.com" target="_blank">Link 2</a>
-      <a href="https://example.com" target="_blank">Link 3</a>
-      <a href="https://example.com" target="_blank">Link 4</a>
+      <a href="https://example.com" target="_blank">Ссылка 1</a>
+      <a href="https://example.com" target="_blank">Ссылка 2</a>
+      <a href="https://example.com" target="_blank">Ссылка 3</a>
+      <a href="https://example.com" target="_blank">Ссылка 4</a>
     </div>
   </div>
 </body>
