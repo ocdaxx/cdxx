@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Визитка</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f1f1f1;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .social-links {
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #0077cc;
+    }
+
+    .payment-button {
+      display: block;
+      background-color: #28a745;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      text-align: center;
+      width: 100%;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .payment-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="avatar.jpg" alt="Аватар" class="avatar">
+    <div class="social-links">
+      <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+      <a href="https://t.me/yourprofile" target="_blank">Telegram</a>
+    </div>
+    <a href="https://yourpaymentlink.com" class="payment-button" target="_blank">Оплатить</a>
+  </div>
+
+</body>
+</html>
