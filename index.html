@@ -4,79 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Визитка</title>
+  <!-- Подключаем Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Подключаем кастомный стиль -->
   <style>
     body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f1f1f1;
+      background-color: #f4f7fc;
+      font-family: 'Arial', sans-serif;
     }
-
     .card {
-      background-color: #fff;
-      width: 300px;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-    }
-
-    .avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    .social-links {
-      margin-bottom: 20px;
-    }
-
-    .social-links a {
-      display: inline-block;
-      margin: 10px;
-      text-decoration: none;
-      font-size: 18px;
-      color: #333;
-      transition: color 0.3s;
-    }
-
-    .social-links a:hover {
-      color: #0077cc;
-    }
-
-    .payment-button {
-      display: block;
-      background-color: #28a745;
-      color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-      font-size: 18px;
-      text-align: center;
       width: 100%;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s;
+      max-width: 400px;
+      margin: 30px auto;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     }
-
-    .payment-button:hover {
-      background-color: #218838;
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .card-body {
+      text-align: center;
+    }
+    .btn-custom {
+      background-color: #007bff;
+      color: white;
+      width: 100%;
+      font-size: 16px;
+      padding: 12px;
+    }
+    .btn-custom:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <img src="avatar.jpg" alt="Аватар" class="avatar">
-    <div class="social-links">
-      <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
-      <a href="https://t.me/yourprofile" target="_blank">Telegram</a>
+    <!-- Логотип (аватарка) -->
+    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Логотип">
+    <div class="card-body">
+      <!-- Заголовок -->
+      <h3 class="card-title">Ваше Имя</h3>
+      <p class="card-text">Ваши данные и краткая информация.</p>
+      <!-- Ссылки на Instagram и Telegram -->
+      <a href="https://instagram.com" target="_blank" class="btn btn-outline-primary btn-block">Instagram</a>
+      <a href="https://t.me" target="_blank" class="btn btn-outline-primary btn-block mt-2">Telegram</a>
+      <!-- Кнопка оплаты -->
+      <button class="btn-custom mt-3" onclick="handlePayment()">Оплатить</button>
     </div>
-    <a href="https://yourpaymentlink.com" class="payment-button" target="_blank">Оплатить</a>
   </div>
 
+  <!-- Подключаем Bootstrap JS и Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function handlePayment() {
+      alert("Платежный процесс начнется!");
+      // Можно добавить код для интеграции с системой оплаты
+    }
+  </script>
 </body>
 </html>
